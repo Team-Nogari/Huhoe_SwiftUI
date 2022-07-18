@@ -16,6 +16,7 @@
 		0827EE3828853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */; };
 		0827EE462885629A000EE301 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0827EE452885629A000EE301 /* Alamofire */; };
 		0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE492885A00D000EE301 /* HTTPService.swift */; };
+		0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE4B2885A816000EE301 /* APIRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0827EE3528853223000EE301 /* Huhoe_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0827EE492885A00D000EE301 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		0827EE4B2885A816000EE301 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				0827EE492885A00D000EE301 /* HTTPService.swift */,
+				0827EE4B2885A816000EE301 /* APIRouter.swift */,
 			);
 			path = HTTPService;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */,
+				0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */,
 				0827EE1D28853220000EE301 /* ContentView.swift in Sources */,
 				0827EE1B28853220000EE301 /* Huhoe_SwiftUIApp.swift in Sources */,
 			);
