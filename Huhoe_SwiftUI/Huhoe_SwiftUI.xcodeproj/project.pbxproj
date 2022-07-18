@@ -15,6 +15,7 @@
 		0827EE3628853223000EE301 /* Huhoe_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE3528853223000EE301 /* Huhoe_SwiftUIUITests.swift */; };
 		0827EE3828853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */; };
 		0827EE462885629A000EE301 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0827EE452885629A000EE301 /* Alamofire */; };
+		0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE492885A00D000EE301 /* HTTPService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		0827EE3128853223000EE301 /* Huhoe_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Huhoe_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0827EE3528853223000EE301 /* Huhoe_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0827EE492885A00D000EE301 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
+				0827EE4728856306000EE301 /* Service */,
 				0827EE1928853220000EE301 /* Huhoe_SwiftUI */,
 				0827EE2A28853223000EE301 /* Huhoe_SwiftUITests */,
 				0827EE3428853223000EE301 /* Huhoe_SwiftUIUITests */,
@@ -127,6 +130,22 @@
 				0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = Huhoe_SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		0827EE4728856306000EE301 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0827EE4828856389000EE301 /* HTTPService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0827EE4828856389000EE301 /* HTTPService */ = {
+			isa = PBXGroup;
+			children = (
+				0827EE492885A00D000EE301 /* HTTPService.swift */,
+			);
+			path = HTTPService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */,
 				0827EE1D28853220000EE301 /* ContentView.swift in Sources */,
 				0827EE1B28853220000EE301 /* Huhoe_SwiftUIApp.swift in Sources */,
 			);
