@@ -78,7 +78,6 @@ struct CoinInformationView: View {
                         Text("\(coinInformation.oldPriceString)원")
                             .font(.subheadline)
                             .fontWeight(.black)
-                            .kerning(-1)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     
@@ -90,7 +89,6 @@ struct CoinInformationView: View {
                         Text("\(coinInformation.currentPriceString)원")
                             .font(.subheadline)
                             .fontWeight(.black)
-                            .kerning(-1)
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                 }
@@ -118,5 +116,6 @@ struct CoinInformationView_Previews: PreviewProvider {
             ),
             coinInformation: CoinInformationModel.dummy
         )
+        .previewDevice("iPhone 13")
     }
 }
