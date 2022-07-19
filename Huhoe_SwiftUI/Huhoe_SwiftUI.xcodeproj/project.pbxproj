@@ -92,11 +92,11 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
-				082CDF0B2886ADF800547694 /* Shared */,
 				0827EE1A28853220000EE301 /* AppMain.swift */,
+				082CDF0B2886ADF800547694 /* Shared */,
 				085689442886AD6400A45819 /* Resource */,
 				0827EE4728856306000EE301 /* Service */,
-				0827EE1928853220000EE301 /* Huhoe_SwiftUI */,
+				0827EE1928853220000EE301 /* CoinInformaion */,
 				0827EE2A28853223000EE301 /* Huhoe_SwiftUITests */,
 				0827EE3428853223000EE301 /* Huhoe_SwiftUIUITests */,
 				0827EE1828853220000EE301 /* Products */,
@@ -113,12 +113,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0827EE1928853220000EE301 /* Huhoe_SwiftUI */ = {
+		0827EE1928853220000EE301 /* CoinInformaion */ = {
 			isa = PBXGroup;
 			children = (
 				0827EE1C28853220000EE301 /* ContentView.swift */,
 			);
-			path = Huhoe_SwiftUI;
+			path = CoinInformaion;
 			sourceTree = "<group>";
 		};
 		0827EE2A28853223000EE301 /* Huhoe_SwiftUITests */ = {
