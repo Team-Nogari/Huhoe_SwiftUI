@@ -6,16 +6,31 @@
 //
 
 import SwiftUI
+import Combine
+
+import ComposableArchitecture
 
 struct CoinInformationView: View {
+    let store: Store<CoinInformationState, CoinInformationAction>
+    let coinInformation: CoinInformationModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("ddd")
+        }
     }
 }
 
 struct CoinInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        CoinInformationView()
+        CoinInformationView(
+            store: Store(
+                initialState: CoinInformationState(),
+                reducer: coinInformationReducer,
+                environment: .dev(environment: CoinInformationEnvironment(coinInformaionRequset: dummyRepositoryErrect)
+                )
+            ),
+            coinInformation: CoinInformationModel.dummy
+        )
     }
 }

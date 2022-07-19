@@ -42,3 +42,17 @@ extension CoinInformationModel {
 extension CoinInformationModel: Identifiable {
     var id: String { coinSymbol }
 }
+
+extension CoinInformationModel {
+    static var dummy: CoinInformationModel {
+        return CoinInformationModel(
+            coinName: "비트코인",
+            coinSymbol: "BTC",
+            calculatedPrice: 20000000,
+            rate: 10,
+            profitAndLoss: -2000000,
+            currentPrice: 22000000,
+            oldPrice: 20000000
+        )
+    }
+}
