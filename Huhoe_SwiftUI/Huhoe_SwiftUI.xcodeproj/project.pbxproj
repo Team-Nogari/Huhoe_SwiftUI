@@ -7,20 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0827EE1B28853220000EE301 /* Huhoe_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE1A28853220000EE301 /* Huhoe_SwiftUIApp.swift */; };
-		0827EE1D28853220000EE301 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE1C28853220000EE301 /* ContentView.swift */; };
+		0827EE1B28853220000EE301 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE1A28853220000EE301 /* AppMain.swift */; };
+		0827EE1D28853220000EE301 /* CoinInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE1C28853220000EE301 /* CoinInformationView.swift */; };
 		0827EE1F28853223000EE301 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0827EE1E28853223000EE301 /* Assets.xcassets */; };
-		0827EE2228853223000EE301 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0827EE2128853223000EE301 /* Preview Assets.xcassets */; };
 		0827EE2C28853223000EE301 /* Huhoe_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE2B28853223000EE301 /* Huhoe_SwiftUITests.swift */; };
 		0827EE3628853223000EE301 /* Huhoe_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE3528853223000EE301 /* Huhoe_SwiftUIUITests.swift */; };
 		0827EE3828853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */; };
 		0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE492885A00D000EE301 /* HTTPService.swift */; };
 		0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE4B2885A816000EE301 /* APIRouter.swift */; };
+		082CDF0A2886ADE600547694 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 082CDF092886ADE600547694 /* Preview Assets.xcassets */; };
+		082CDF0D2886AE1A00547694 /* SystemEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF0C2886AE1A00547694 /* SystemEnvironment.swift */; };
+		082CDF0F2886AFA000547694 /* CoinInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF0E2886AFA000547694 /* CoinInformationModel.swift */; };
+		082CDF122886B00B00547694 /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF112886B00B00547694 /* Double+extension.swift */; };
+		082CDF142886B08E00547694 /* CoinInformationEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF132886B08E00547694 /* CoinInformationEffects.swift */; };
+		082CDF162886B1F400547694 /* CoinInformaionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF152886B1F400547694 /* CoinInformaionFeature.swift */; };
+		082CDF192886B89000547694 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF182886B89000547694 /* RootView.swift */; };
+		082CDF1B2886B9F400547694 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF1A2886B9F400547694 /* RootFeature.swift */; };
+		082CDF1E2886BC3200547694 /* HuhoeNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF1D2886BC3200547694 /* HuhoeNumberFormatter.swift */; };
 		08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */; };
 		085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */; };
 		085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */; };
 		08568937288690CB00A45819 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568936288690CB00A45819 /* HTTPError.swift */; };
 		0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856893B2886997A00A45819 /* URLSessionProtocol.swift */; };
+		085689432886ABD900A45819 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 085689422886ABD900A45819 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +51,9 @@
 
 /* Begin PBXFileReference section */
 		0827EE1728853220000EE301 /* Huhoe_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Huhoe_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0827EE1A28853220000EE301 /* Huhoe_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIApp.swift; sourceTree = "<group>"; };
-		0827EE1C28853220000EE301 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0827EE1A28853220000EE301 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		0827EE1C28853220000EE301 /* CoinInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformationView.swift; sourceTree = "<group>"; };
 		0827EE1E28853223000EE301 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0827EE2128853223000EE301 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0827EE2728853223000EE301 /* Huhoe_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Huhoe_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0827EE2B28853223000EE301 /* Huhoe_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUITests.swift; sourceTree = "<group>"; };
 		0827EE3128853223000EE301 /* Huhoe_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Huhoe_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +61,15 @@
 		0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0827EE492885A00D000EE301 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		0827EE4B2885A816000EE301 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		082CDF092886ADE600547694 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		082CDF0C2886AE1A00547694 /* SystemEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemEnvironment.swift; sourceTree = "<group>"; };
+		082CDF0E2886AFA000547694 /* CoinInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformationModel.swift; sourceTree = "<group>"; };
+		082CDF112886B00B00547694 /* Double+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
+		082CDF132886B08E00547694 /* CoinInformationEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformationEffects.swift; sourceTree = "<group>"; };
+		082CDF152886B1F400547694 /* CoinInformaionFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformaionFeature.swift; sourceTree = "<group>"; };
+		082CDF182886B89000547694 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		082CDF1A2886B9F400547694 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
+		082CDF1D2886BC3200547694 /* HuhoeNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuhoeNumberFormatter.swift; sourceTree = "<group>"; };
 		08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CandlestickResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				085689432886ABD900A45819 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +106,14 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
+				082CDF1C2886BC1500547694 /* Utilities */,
+				0827EE1A28853220000EE301 /* AppMain.swift */,
+				082CDF0B2886ADF800547694 /* Shared */,
+				085689442886AD6400A45819 /* Resource */,
+				082CDF102886AFFD00547694 /* Extension */,
 				0827EE4728856306000EE301 /* Service */,
-				0827EE1928853220000EE301 /* Huhoe_SwiftUI */,
+				082CDF172886B81F00547694 /* Root */,
+				0827EE1928853220000EE301 /* CoinInformaion */,
 				0827EE2A28853223000EE301 /* Huhoe_SwiftUITests */,
 				0827EE3428853223000EE301 /* Huhoe_SwiftUIUITests */,
 				0827EE1828853220000EE301 /* Products */,
@@ -106,23 +130,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0827EE1928853220000EE301 /* Huhoe_SwiftUI */ = {
+		0827EE1928853220000EE301 /* CoinInformaion */ = {
 			isa = PBXGroup;
 			children = (
-				0827EE1A28853220000EE301 /* Huhoe_SwiftUIApp.swift */,
-				0827EE1C28853220000EE301 /* ContentView.swift */,
-				0827EE1E28853223000EE301 /* Assets.xcassets */,
-				0827EE2028853223000EE301 /* Preview Content */,
+				082CDF152886B1F400547694 /* CoinInformaionFeature.swift */,
+				082CDF132886B08E00547694 /* CoinInformationEffects.swift */,
+				082CDF0E2886AFA000547694 /* CoinInformationModel.swift */,
+				0827EE1C28853220000EE301 /* CoinInformationView.swift */,
 			);
-			path = Huhoe_SwiftUI;
-			sourceTree = "<group>";
-		};
-		0827EE2028853223000EE301 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				0827EE2128853223000EE301 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = CoinInformaion;
 			sourceTree = "<group>";
 		};
 		0827EE2A28853223000EE301 /* Huhoe_SwiftUITests */ = {
@@ -162,6 +178,47 @@
 			path = HTTPService;
 			sourceTree = "<group>";
 		};
+		082CDF082886ADE600547694 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				082CDF092886ADE600547694 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		082CDF0B2886ADF800547694 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				082CDF0C2886AE1A00547694 /* SystemEnvironment.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		082CDF102886AFFD00547694 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				082CDF112886B00B00547694 /* Double+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		082CDF172886B81F00547694 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				082CDF182886B89000547694 /* RootView.swift */,
+				082CDF1A2886B9F400547694 /* RootFeature.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		082CDF1C2886BC1500547694 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				082CDF1D2886BC3200547694 /* HuhoeNumberFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		0856892F288677EE00A45819 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +253,15 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		085689442886AD6400A45819 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				082CDF082886ADE600547694 /* Preview Content */,
+				0827EE1E28853223000EE301 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,6 +279,7 @@
 			);
 			name = Huhoe_SwiftUI;
 			packageProductDependencies = (
+				085689422886ABD900A45819 /* ComposableArchitecture */,
 			);
 			productName = Huhoe_SwiftUI;
 			productReference = 0827EE1728853220000EE301 /* Huhoe_SwiftUI.app */;
@@ -287,6 +354,7 @@
 			);
 			mainGroup = 0827EE0E28853220000EE301;
 			packageReferences = (
+				085689412886ABD900A45819 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 0827EE1828853220000EE301 /* Products */;
 			projectDirPath = "";
@@ -304,7 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0827EE2228853223000EE301 /* Preview Assets.xcassets in Resources */,
+				082CDF0A2886ADE600547694 /* Preview Assets.xcassets in Resources */,
 				0827EE1F28853223000EE301 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,15 +398,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				082CDF122886B00B00547694 /* Double+extension.swift in Sources */,
+				082CDF0D2886AE1A00547694 /* SystemEnvironment.swift in Sources */,
 				0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */,
 				0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */,
+				082CDF1E2886BC3200547694 /* HuhoeNumberFormatter.swift in Sources */,
+				082CDF142886B08E00547694 /* CoinInformationEffects.swift in Sources */,
 				08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */,
 				085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */,
+				082CDF0F2886AFA000547694 /* CoinInformationModel.swift in Sources */,
 				0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */,
 				08568937288690CB00A45819 /* HTTPError.swift in Sources */,
+				082CDF192886B89000547694 /* RootView.swift in Sources */,
 				085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */,
-				0827EE1D28853220000EE301 /* ContentView.swift in Sources */,
-				0827EE1B28853220000EE301 /* Huhoe_SwiftUIApp.swift in Sources */,
+				082CDF1B2886B9F400547694 /* RootFeature.swift in Sources */,
+				082CDF162886B1F400547694 /* CoinInformaionFeature.swift in Sources */,
+				0827EE1D28853220000EE301 /* CoinInformationView.swift in Sources */,
+				0827EE1B28853220000EE301 /* AppMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +741,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		085689412886ABD900A45819 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		085689422886ABD900A45819 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 085689412886ABD900A45819 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0827EE0F28853220000EE301 /* Project object */;
 }

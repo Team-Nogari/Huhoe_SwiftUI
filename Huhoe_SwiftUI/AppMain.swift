@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct Huhoe_SwiftUIApp: App {
+struct AppMain: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
