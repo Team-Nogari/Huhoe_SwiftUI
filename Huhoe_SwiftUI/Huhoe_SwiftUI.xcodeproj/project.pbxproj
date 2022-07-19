@@ -18,6 +18,7 @@
 		0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE492885A00D000EE301 /* HTTPService.swift */; };
 		0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE4B2885A816000EE301 /* APIRouter.swift */; };
 		08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */; };
+		085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0827EE492885A00D000EE301 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
 		0827EE4B2885A816000EE301 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */,
+				085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */,
 				08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */,
+				085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */,
 				0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */,
 				0827EE1D28853220000EE301 /* ContentView.swift in Sources */,
 				0827EE1B28853220000EE301 /* Huhoe_SwiftUIApp.swift in Sources */,
