@@ -22,3 +22,18 @@ enum CoinInformationAction {
 struct CoinInformationEnvironment {
     var coinInformaionRequset: (JSONDecoder) -> Effect<[CoinInformationModel], HTTPError>
 }
+
+let coinInformationReducer = Reducer<
+    CoinInformationState,
+    CoinInformationAction,
+    SystemEnvironment<CoinInformationEnvironment>
+> { state, action, environment in
+  switch action {
+  case .onAppear:
+      return .none
+  case .dataLoaded(let result):
+      return .none
+  case .coinInformationTapped(let information):
+      return .none
+  }
+}
