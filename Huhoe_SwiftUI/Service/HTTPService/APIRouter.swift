@@ -7,9 +7,7 @@
 
 import Foundation
 
-import Alamofire
-
-enum APIRouter: URLRequestConvertible {
+enum APIRouter {
     
     // MARK: - API Cases
     
@@ -24,6 +22,17 @@ enum APIRouter: URLRequestConvertible {
     }
     
     // MARK: - Methods
+    
+    enum HTTPMethod: CustomStringConvertible {
+        case get
+        
+        var description: String {
+            switch self {
+            case .get:
+                return "GET"
+            }
+        }
+    }
     
     var method: HTTPMethod {
         switch self {
@@ -47,9 +56,10 @@ enum APIRouter: URLRequestConvertible {
     
     // MARK: - asURLRequset
     
-    func asURLRequest() throws -> URLRequest {
+    func asURLRequest() -> URLRequest {
         let url = baseURL.appendingPathComponent(path)
-        let urlRequset = try URLRequest(url: url, method: method)
+        var urlRequset = URLRequest(url: url)
+        urlRequset.httpMethod = "\(method)"
         
         return urlRequset
     }
