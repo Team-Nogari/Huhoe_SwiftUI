@@ -20,6 +20,7 @@
 		082CDF0F2886AFA000547694 /* CoinInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF0E2886AFA000547694 /* CoinInformationModel.swift */; };
 		082CDF122886B00B00547694 /* Double+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF112886B00B00547694 /* Double+extension.swift */; };
 		082CDF142886B08E00547694 /* CoinInformationEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF132886B08E00547694 /* CoinInformationEffects.swift */; };
+		082CDF162886B1F400547694 /* CoinInformaionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF152886B1F400547694 /* CoinInformaionFeature.swift */; };
 		08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */; };
 		085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */; };
 		085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */; };
@@ -62,6 +63,7 @@
 		082CDF0E2886AFA000547694 /* CoinInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformationModel.swift; sourceTree = "<group>"; };
 		082CDF112886B00B00547694 /* Double+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+extension.swift"; sourceTree = "<group>"; };
 		082CDF132886B08E00547694 /* CoinInformationEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformationEffects.swift; sourceTree = "<group>"; };
+		082CDF152886B1F400547694 /* CoinInformaionFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformaionFeature.swift; sourceTree = "<group>"; };
 		08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CandlestickResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
@@ -123,9 +125,10 @@
 		0827EE1928853220000EE301 /* CoinInformaion */ = {
 			isa = PBXGroup;
 			children = (
-				0827EE1C28853220000EE301 /* CoinInformationView.swift */,
-				082CDF0E2886AFA000547694 /* CoinInformationModel.swift */,
+				082CDF152886B1F400547694 /* CoinInformaionFeature.swift */,
 				082CDF132886B08E00547694 /* CoinInformationEffects.swift */,
+				082CDF0E2886AFA000547694 /* CoinInformationModel.swift */,
+				0827EE1C28853220000EE301 /* CoinInformationView.swift */,
 			);
 			path = CoinInformaion;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */,
 				08568937288690CB00A45819 /* HTTPError.swift in Sources */,
 				085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */,
+				082CDF162886B1F400547694 /* CoinInformaionFeature.swift in Sources */,
 				0827EE1D28853220000EE301 /* CoinInformationView.swift in Sources */,
 				0827EE1B28853220000EE301 /* AppMain.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CoinInformationModel: Hashable {
+struct CoinInformationModel: Equatable {
     let coinName: String
     let coinSymbol: String
     let calculatedPrice: Double

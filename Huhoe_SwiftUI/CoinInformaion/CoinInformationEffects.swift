@@ -6,7 +6,12 @@
 //
 
 import Foundation
+
 import ComposableArchitecture
+
+func coinInformaionEffect(decoder: JSONDecoder) -> Effect<[CoinInformationModel], HTTPError> {
+    return Effect(value: [])
+}
 
 func dummyRepositoryErrect(decoder: JSONDecoder) -> Effect<[CoinInformationModel], HTTPError> {
     let dummyCoinInformations = [
@@ -38,7 +43,6 @@ func dummyRepositoryErrect(decoder: JSONDecoder) -> Effect<[CoinInformationModel
             oldPrice: 20000000
         )
     ]
-    
     
     return Effect(value: dummyCoinInformations)
 }
