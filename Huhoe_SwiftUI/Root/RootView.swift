@@ -11,12 +11,13 @@ import ComposableArchitecture
 
 struct RootView: View {
     var body: some View {
-        CoinInformationView()
+        Text("Hello, world!")
+            .padding()
     }
 }
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        CoinInformationView()
+        RootView()
     }
 }

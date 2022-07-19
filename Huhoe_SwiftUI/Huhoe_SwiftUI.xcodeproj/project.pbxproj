@@ -23,6 +23,7 @@
 		082CDF162886B1F400547694 /* CoinInformaionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF152886B1F400547694 /* CoinInformaionFeature.swift */; };
 		082CDF192886B89000547694 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF182886B89000547694 /* RootView.swift */; };
 		082CDF1B2886B9F400547694 /* RootFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF1A2886B9F400547694 /* RootFeature.swift */; };
+		082CDF1E2886BC3200547694 /* HuhoeNumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082CDF1D2886BC3200547694 /* HuhoeNumberFormatter.swift */; };
 		08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */; };
 		085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */; };
 		085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */; };
@@ -68,6 +69,7 @@
 		082CDF152886B1F400547694 /* CoinInformaionFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinInformaionFeature.swift; sourceTree = "<group>"; };
 		082CDF182886B89000547694 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		082CDF1A2886B9F400547694 /* RootFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootFeature.swift; sourceTree = "<group>"; };
+		082CDF1D2886BC3200547694 /* HuhoeNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuhoeNumberFormatter.swift; sourceTree = "<group>"; };
 		08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CandlestickResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
+				082CDF1C2886BC1500547694 /* Utilities */,
 				0827EE1A28853220000EE301 /* AppMain.swift */,
 				082CDF0B2886ADF800547694 /* Shared */,
 				085689442886AD6400A45819 /* Resource */,
@@ -206,6 +209,14 @@
 				082CDF1A2886B9F400547694 /* RootFeature.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		082CDF1C2886BC1500547694 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				082CDF1D2886BC3200547694 /* HuhoeNumberFormatter.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		0856892F288677EE00A45819 /* DTO */ = {
@@ -391,6 +402,7 @@
 				082CDF0D2886AE1A00547694 /* SystemEnvironment.swift in Sources */,
 				0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */,
 				0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */,
+				082CDF1E2886BC3200547694 /* HuhoeNumberFormatter.swift in Sources */,
 				082CDF142886B08E00547694 /* CoinInformationEffects.swift in Sources */,
 				08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */,
 				085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */,
