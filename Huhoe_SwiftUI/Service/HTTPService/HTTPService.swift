@@ -6,32 +6,19 @@
 //
 
 import Foundation
+import Combine
 
 import Alamofire
 
 final class HTTPService {
     
-    typealias onSuccess<T> = ((T) -> Void)
-    typealias onFailure = ((_ error: Error) -> Void)
-    
-    func request<T>(
+    func request<T: Decodable>(
         _ object: T.Type,
         _ router: URLRequestConvertible,
-        success: @escaping onSuccess<T>,
-        failure: @escaping onFailure
-    ) where T: Decodable {
-        AF.request(router)
-            .validate(statusCode: 200..<500)
-            .responseDecodable(of: object) { response in
-                switch response.result {
-                case .success:
-                    guard let decodedData = response.value else {
-                        return
-                    }
-                    success(decodedData)
-                case .failure(let error):
-                    failure(error)
-                }
-            }
+        _ decoder: JSONDecoder = JSONDecoder()
+    ) -> AnyPublisher<Result<T, AFError>, Never> {
+        return AF.request(router)
+            .publishDecodable(type: T.self, decoder: decoder)
+            .result()
     }
 }

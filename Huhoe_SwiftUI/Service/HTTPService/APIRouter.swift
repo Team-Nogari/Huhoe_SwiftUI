@@ -17,6 +17,8 @@ enum APIRouter: URLRequestConvertible {
     case transactionHistory(coinSymbol: String)
     case candlestick(coinSymbol: String)
     
+    // MARK: - Base URL
+    
     var baseURL: URL {
         return URL(string: "https://api.bithumb.com/public")!
     }
