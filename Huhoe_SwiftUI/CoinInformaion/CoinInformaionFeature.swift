@@ -28,12 +28,12 @@ let coinInformationReducer = Reducer<
     CoinInformationAction,
     SystemEnvironment<CoinInformationEnvironment>
 > { state, action, environment in
-  switch action {
-  case .onAppear:
-      return .none
-  case .dataLoaded(let result):
-      return .none
-  case .coinInformationTapped(let information):
-      return .none
-  }
+    switch action {
+    case .onAppear:
+        return .none
+    case .dataLoaded(let result):
+        return .none
+    case .coinInformationTapped(let information):
+        return .none
+    }
 }
