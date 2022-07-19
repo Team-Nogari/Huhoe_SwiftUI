@@ -20,6 +20,7 @@
 		085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */; };
 		085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */; };
 		08568937288690CB00A45819 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568936288690CB00A45819 /* HTTPError.swift */; };
+		0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856893B2886997A00A45819 /* URLSessionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CandlestickResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		08568936288690CB00A45819 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		0856893B2886997A00A45819 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,10 +153,11 @@
 		0827EE4828856389000EE301 /* HTTPService */ = {
 			isa = PBXGroup;
 			children = (
+				0856893A2886995A00A45819 /* Protocol */,
+				085689392886995200A45819 /* API */,
+				085689382886994800A45819 /* Error */,
 				0856892F288677EE00A45819 /* DTO */,
 				0827EE492885A00D000EE301 /* HTTPService.swift */,
-				0827EE4B2885A816000EE301 /* APIRouter.swift */,
-				08568936288690CB00A45819 /* HTTPError.swift */,
 			);
 			path = HTTPService;
 			sourceTree = "<group>";
@@ -167,6 +170,30 @@
 				085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		085689382886994800A45819 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				08568936288690CB00A45819 /* HTTPError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		085689392886995200A45819 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0827EE4B2885A816000EE301 /* APIRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0856893A2886995A00A45819 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0856893B2886997A00A45819 /* URLSessionProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */,
 				0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */,
 				08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */,
 				085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */,

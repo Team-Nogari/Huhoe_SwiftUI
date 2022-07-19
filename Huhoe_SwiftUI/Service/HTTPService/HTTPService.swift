@@ -10,9 +10,9 @@ import Combine
 
 final class HTTPService {
     
-    private let session: URLSession
+    private let session: URLSessionProtocol
     
-    init(session: URLSession = URLSession.shared) {
+    init(session: URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
     
