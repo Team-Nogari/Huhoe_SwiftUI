@@ -14,6 +14,13 @@
 		0827EE2C28853223000EE301 /* Huhoe_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE2B28853223000EE301 /* Huhoe_SwiftUITests.swift */; };
 		0827EE3628853223000EE301 /* Huhoe_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE3528853223000EE301 /* Huhoe_SwiftUIUITests.swift */; };
 		0827EE3828853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */; };
+		0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE492885A00D000EE301 /* HTTPService.swift */; };
+		0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0827EE4B2885A816000EE301 /* APIRouter.swift */; };
+		08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */; };
+		085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */; };
+		085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */; };
+		08568937288690CB00A45819 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568936288690CB00A45819 /* HTTPError.swift */; };
+		0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856893B2886997A00A45819 /* URLSessionProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		0827EE3128853223000EE301 /* Huhoe_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Huhoe_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0827EE3528853223000EE301 /* Huhoe_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		0827EE3728853223000EE301 /* Huhoe_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Huhoe_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0827EE492885A00D000EE301 /* HTTPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPService.swift; sourceTree = "<group>"; };
+		0827EE4B2885A816000EE301 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CandlestickResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		08568936288690CB00A45819 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		0856893B2886997A00A45819 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
+				0827EE4728856306000EE301 /* Service */,
 				0827EE1928853220000EE301 /* Huhoe_SwiftUI */,
 				0827EE2A28853223000EE301 /* Huhoe_SwiftUITests */,
 				0827EE3428853223000EE301 /* Huhoe_SwiftUIUITests */,
@@ -127,6 +142,60 @@
 			path = Huhoe_SwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		0827EE4728856306000EE301 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0827EE4828856389000EE301 /* HTTPService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0827EE4828856389000EE301 /* HTTPService */ = {
+			isa = PBXGroup;
+			children = (
+				0856893A2886995A00A45819 /* Protocol */,
+				085689392886995200A45819 /* API */,
+				085689382886994800A45819 /* Error */,
+				0856892F288677EE00A45819 /* DTO */,
+				0827EE492885A00D000EE301 /* HTTPService.swift */,
+			);
+			path = HTTPService;
+			sourceTree = "<group>";
+		};
+		0856892F288677EE00A45819 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				08568930288679E300A45819 /* TickerResponseDTO+Mapping.swift */,
+				085689322886821E00A45819 /* TransactionResponseDTO+Mapping.swift */,
+				085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		085689382886994800A45819 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				08568936288690CB00A45819 /* HTTPError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		085689392886995200A45819 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0827EE4B2885A816000EE301 /* APIRouter.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0856893A2886995A00A45819 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0856893B2886997A00A45819 /* URLSessionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +212,8 @@
 			dependencies = (
 			);
 			name = Huhoe_SwiftUI;
+			packageProductDependencies = (
+			);
 			productName = Huhoe_SwiftUI;
 			productReference = 0827EE1728853220000EE301 /* Huhoe_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +286,8 @@
 				Base,
 			);
 			mainGroup = 0827EE0E28853220000EE301;
+			packageReferences = (
+			);
 			productRefGroup = 0827EE1828853220000EE301 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,6 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */,
+				0827EE4A2885A00D000EE301 /* HTTPService.swift in Sources */,
+				08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */,
+				085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */,
+				0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */,
+				08568937288690CB00A45819 /* HTTPError.swift in Sources */,
+				085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */,
 				0827EE1D28853220000EE301 /* ContentView.swift in Sources */,
 				0827EE1B28853220000EE301 /* Huhoe_SwiftUIApp.swift in Sources */,
 			);
@@ -436,7 +516,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +545,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
