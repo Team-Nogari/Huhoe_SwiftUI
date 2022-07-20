@@ -88,3 +88,30 @@ extension TickerResponseDTO.DynamicValue {
         return nil
     }
 }
+
+// MARK: - Mapping to Domain
+
+extension TickerResponseDTO {
+    func toDomain() -> [Ticker] {
+        var tickers = [Ticker]()
+        
+        tickerDTO.forEach { key, dynamicValue in
+            if let tickerDTO = dynamicValue.tickerData {
+                let ticker = tickerDTO.toDomain(coinSymbol: key)
+                tickers.append(ticker)
+            }
+        }
+
+        return tickers
+    }
+}
+
+extension TickerResponseDTO.TickerDTO {
+    func toDomain(coinSymbol: String) -> Ticker {
+        return Ticker(
+            coinSymbol: coinSymbol,
+            openPirce: openingPrice.toDouble,
+            accTradeValue24Hour: accTradeValue24Hour.toDouble
+        )
+    }
+}

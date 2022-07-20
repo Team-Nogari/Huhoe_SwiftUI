@@ -32,6 +32,8 @@
 		085689432886ABD900A45819 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 085689422886ABD900A45819 /* ComposableArchitecture */; };
 		08AC4AE52887F7B1007916E3 /* KOHIBaeum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */; };
 		08AC4AE82887FBA1007916E3 /* Font+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC4AE72887FBA1007916E3 /* Font+extension.swift */; };
+		08AC4AEB2888016F007916E3 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC4AEA2888016F007916E3 /* Ticker.swift */; };
+		08AC4AEE2888021D007916E3 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC4AED2888021D007916E3 /* String+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KOHIBaeum.ttf; sourceTree = "<group>"; };
 		08AC4AE62887F7FF007916E3 /* Huhoe-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Huhoe-SwiftUI-Info.plist"; sourceTree = "<group>"; };
 		08AC4AE72887FBA1007916E3 /* Font+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+extension.swift"; sourceTree = "<group>"; };
+		08AC4AEA2888016F007916E3 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		08AC4AED2888021D007916E3 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +115,10 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
+				08AC4AE928880155007916E3 /* Domain */,
+				0827EE1A28853220000EE301 /* AppMain.swift */,
 				08AC4AE62887F7FF007916E3 /* Huhoe-SwiftUI-Info.plist */,
 				082CDF1C2886BC1500547694 /* Utilities */,
-				0827EE1A28853220000EE301 /* AppMain.swift */,
 				082CDF0B2886ADF800547694 /* Shared */,
 				085689442886AD6400A45819 /* Resource */,
 				082CDF102886AFFD00547694 /* Extension */,
@@ -205,6 +210,7 @@
 			children = (
 				082CDF112886B00B00547694 /* Double+extension.swift */,
 				08AC4AE72887FBA1007916E3 /* Font+extension.swift */,
+				08AC4AED2888021D007916E3 /* String+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -276,6 +282,22 @@
 				08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		08AC4AE928880155007916E3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				08AC4AEC288801A9007916E3 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		08AC4AEC288801A9007916E3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				08AC4AEA2888016F007916E3 /* Ticker.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +444,7 @@
 				082CDF1E2886BC3200547694 /* HuhoeNumberFormatter.swift in Sources */,
 				082CDF142886B08E00547694 /* CoinInformationEffects.swift in Sources */,
 				08568931288679E300A45819 /* TickerResponseDTO+Mapping.swift in Sources */,
+				08AC4AEB2888016F007916E3 /* Ticker.swift in Sources */,
 				085689332886821E00A45819 /* TransactionResponseDTO+Mapping.swift in Sources */,
 				082CDF0F2886AFA000547694 /* CoinInformationModel.swift in Sources */,
 				0827EE4C2885A816000EE301 /* APIRouter.swift in Sources */,
@@ -430,6 +453,7 @@
 				085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */,
 				082CDF1B2886B9F400547694 /* RootFeature.swift in Sources */,
 				08AC4AE82887FBA1007916E3 /* Font+extension.swift in Sources */,
+				08AC4AEE2888021D007916E3 /* String+extension.swift in Sources */,
 				082CDF162886B1F400547694 /* CoinInformaionFeature.swift in Sources */,
 				0827EE1D28853220000EE301 /* CoinInformationView.swift in Sources */,
 				0827EE1B28853220000EE301 /* AppMain.swift in Sources */,
