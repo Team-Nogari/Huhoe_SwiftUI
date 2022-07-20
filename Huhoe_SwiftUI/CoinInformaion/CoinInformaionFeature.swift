@@ -30,10 +30,21 @@ let coinInformationReducer = Reducer<
 > { state, action, environment in
     switch action {
     case .onAppear:
-        return .none
+        return environment.coinInformaionRequset(environment.decoder())
+            .receive(on: environment.mainQueue())
+            .catchToEffect()
+            .map( CoinInformationAction.dataLoaded )
     case .dataLoaded(let result):
+        switch result {
+        case .success(let informations):
+            state.informations = informations
+        case .failure(let error):
+            print(error.localizedDescription)
+            break
+        }
         return .none
     case .coinInformationTapped(let information):
+        print(information)
         return .none
     }
 }
