@@ -41,18 +41,16 @@ struct CoinInformationView: View {
       Button(action: {
         viewStore.send(.coinInformationTapped(coinInformation))
       }) {
-        VStack(spacing: 2) {
+        VStack(spacing: 4) {
           
           // 코인 이름, 심볼
           
           HStack {
             Text(coinInformation.coinName)
-              .font(.title2)
-              .fontWeight(.black)
+              .font(Font.withKOHIBaeum(dynamicFont: .title2))
             
             Text(coinInformation.coinSymbol)
-              .font(.title2)
-              .fontWeight(.black)
+              .font(Font.withKOHIBaeum(dynamicFont: .title2))
               .foregroundColor(.gray)
           }
           .padding(.top, 8)
@@ -67,8 +65,7 @@ struct CoinInformationView: View {
           // 계산된 투자 금액
           
           Text("\(coinInformation.calculatedPriceString)원")
-            .font(.title2)
-            .fontWeight(.black)
+            .font(Font.withKOHIBaeum(dynamicFont: .title2))
             .foregroundColor(.red)
             .padding(0)
           
@@ -76,15 +73,13 @@ struct CoinInformationView: View {
           
           HStack {
             Text("\(coinInformation.profitAndLossString)원")
-              .font(.subheadline)
-              .fontWeight(.black)
+              .font(Font.withKOHIBaeum(dynamicFont: .subhead))
               .foregroundColor(.red)
               .multilineTextAlignment(.center)
               .frame(minWidth: 0, maxWidth: .infinity)
                           
             Text("\(coinInformation.rateString)%")
-              .font(.subheadline)
-              .fontWeight(.black)
+              .font(Font.withKOHIBaeum(dynamicFont: .subhead))
               .foregroundColor(.red)
               .multilineTextAlignment(.center)
               .frame(minWidth: 0, maxWidth: .infinity)
@@ -96,23 +91,21 @@ struct CoinInformationView: View {
           HStack(spacing: 16) {
             HStack {
               Text("당시")
-                .font(.callout)
-                .fontWeight(.black)
-              
+                .font(Font.withKOHIBaeum(dynamicFont: .subhead))
+                              
               Text("\(coinInformation.oldPriceString)원")
-                .font(.subheadline)
-                .fontWeight(.black)
+                .font(Font.withKOHIBaeum(dynamicFont: .subhead))
+                
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             
             HStack {
               Text("현재")
-                .font(.callout)
-                .fontWeight(.black)
-                
+                .font(Font.withKOHIBaeum(dynamicFont: .subhead))
+                                
               Text("\(coinInformation.currentPriceString)원")
-                .font(.subheadline)
-                .fontWeight(.black)
+                .font(Font.withKOHIBaeum(dynamicFont: .subhead))
+                
             }
             .frame(minWidth: 0, maxWidth: .infinity)
           }

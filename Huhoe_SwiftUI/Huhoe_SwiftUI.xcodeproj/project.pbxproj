@@ -30,6 +30,8 @@
 		08568937288690CB00A45819 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568936288690CB00A45819 /* HTTPError.swift */; };
 		0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856893B2886997A00A45819 /* URLSessionProtocol.swift */; };
 		085689432886ABD900A45819 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 085689422886ABD900A45819 /* ComposableArchitecture */; };
+		08AC4AE52887F7B1007916E3 /* KOHIBaeum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */; };
+		08AC4AE82887FBA1007916E3 /* Font+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC4AE72887FBA1007916E3 /* Font+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,9 @@
 		085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CandlestickResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		08568936288690CB00A45819 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		0856893B2886997A00A45819 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KOHIBaeum.ttf; sourceTree = "<group>"; };
+		08AC4AE62887F7FF007916E3 /* Huhoe-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Huhoe-SwiftUI-Info.plist"; sourceTree = "<group>"; };
+		08AC4AE72887FBA1007916E3 /* Font+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,7 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
+				08AC4AE62887F7FF007916E3 /* Huhoe-SwiftUI-Info.plist */,
 				082CDF1C2886BC1500547694 /* Utilities */,
 				0827EE1A28853220000EE301 /* AppMain.swift */,
 				082CDF0B2886ADF800547694 /* Shared */,
@@ -198,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				082CDF112886B00B00547694 /* Double+extension.swift */,
+				08AC4AE72887FBA1007916E3 /* Font+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -256,10 +263,19 @@
 		085689442886AD6400A45819 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				08AC4AE32887F791007916E3 /* Font */,
 				082CDF082886ADE600547694 /* Preview Content */,
 				0827EE1E28853223000EE301 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		08AC4AE32887F791007916E3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +390,7 @@
 			files = (
 				082CDF0A2886ADE600547694 /* Preview Assets.xcassets in Resources */,
 				0827EE1F28853223000EE301 /* Assets.xcassets in Resources */,
+				08AC4AE52887F7B1007916E3 /* KOHIBaeum.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +429,7 @@
 				082CDF192886B89000547694 /* RootView.swift in Sources */,
 				085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */,
 				082CDF1B2886B9F400547694 /* RootFeature.swift in Sources */,
+				08AC4AE82887FBA1007916E3 /* Font+extension.swift in Sources */,
 				082CDF162886B1F400547694 /* CoinInformaionFeature.swift in Sources */,
 				0827EE1D28853220000EE301 /* CoinInformationView.swift in Sources */,
 				0827EE1B28853220000EE301 /* AppMain.swift in Sources */,
@@ -578,6 +596,7 @@
 				DEVELOPMENT_TEAM = XXJA3T7PA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Huhoe-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -607,6 +626,7 @@
 				DEVELOPMENT_TEAM = XXJA3T7PA3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Huhoe-SwiftUI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
