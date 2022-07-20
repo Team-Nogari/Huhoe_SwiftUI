@@ -27,8 +27,8 @@ let rootReducer = Reducer<
         state: \.coinInformationState,
         action: /RootAction.coinInformationAction,
         environment: { _ in
-            .live(
-                environment: CoinInformationEnvironment(coinInformaionRequset: coinInformaionEffect)
+            .dev(
+                environment: CoinInformationEnvironment(coinInformaionRequset: dummyRepositoryErrect)
             )
         }
     )

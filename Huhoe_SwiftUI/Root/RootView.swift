@@ -10,14 +10,30 @@ import SwiftUI
 import ComposableArchitecture
 
 struct RootView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+  let store: Store<RootState, RootAction>
+  
+  var body: some View {
+    WithViewStore(self.store.stateless) { _ in
+      CoinInformationListView(
+        store: store.scope(
+          state: \.coinInformationState,
+          action: RootAction.coinInformationAction
+        )
+      )
     }
+  }
 }
 
 struct RootView_Previews: PreviewProvider {
-    static var previews: some View {
-        RootView()
-    }
+  static var previews: some View {
+    let rootView = RootView(
+      store: Store(
+        initialState: RootState(),
+        reducer: rootReducer,
+        environment: .dev(environment: RootEnvironment())
+      )
+    )
+    
+    return rootView
+  }
 }
