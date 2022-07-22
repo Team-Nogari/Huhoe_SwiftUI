@@ -30,6 +30,7 @@
 		08568937288690CB00A45819 /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08568936288690CB00A45819 /* HTTPError.swift */; };
 		0856893C2886997A00A45819 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0856893B2886997A00A45819 /* URLSessionProtocol.swift */; };
 		085689432886ABD900A45819 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 085689422886ABD900A45819 /* ComposableArchitecture */; };
+		08993D76288A56060034CB12 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08993D75288A56060034CB12 /* Transaction.swift */; };
 		08AC4AE52887F7B1007916E3 /* KOHIBaeum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */; };
 		08AC4AE82887FBA1007916E3 /* Font+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC4AE72887FBA1007916E3 /* Font+extension.swift */; };
 		08AC4AEB2888016F007916E3 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC4AEA2888016F007916E3 /* Ticker.swift */; };
@@ -79,6 +80,7 @@
 		085689342886825B00A45819 /* CandlestickResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CandlestickResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
 		08568936288690CB00A45819 /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
 		0856893B2886997A00A45819 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		08993D75288A56060034CB12 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		08AC4AE42887F7B1007916E3 /* KOHIBaeum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KOHIBaeum.ttf; sourceTree = "<group>"; };
 		08AC4AE62887F7FF007916E3 /* Huhoe-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Huhoe-SwiftUI-Info.plist"; sourceTree = "<group>"; };
 		08AC4AE72887FBA1007916E3 /* Font+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+extension.swift"; sourceTree = "<group>"; };
@@ -115,13 +117,13 @@
 		0827EE0E28853220000EE301 = {
 			isa = PBXGroup;
 			children = (
-				08AC4AE928880155007916E3 /* Domain */,
 				0827EE1A28853220000EE301 /* AppMain.swift */,
 				08AC4AE62887F7FF007916E3 /* Huhoe-SwiftUI-Info.plist */,
 				082CDF1C2886BC1500547694 /* Utilities */,
 				082CDF0B2886ADF800547694 /* Shared */,
 				085689442886AD6400A45819 /* Resource */,
 				082CDF102886AFFD00547694 /* Extension */,
+				08AC4AE928880155007916E3 /* Domain */,
 				0827EE4728856306000EE301 /* Service */,
 				082CDF172886B81F00547694 /* Root */,
 				0827EE1928853220000EE301 /* CoinInformaion */,
@@ -296,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				08AC4AEA2888016F007916E3 /* Ticker.swift */,
+				08993D75288A56060034CB12 /* Transaction.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				08568937288690CB00A45819 /* HTTPError.swift in Sources */,
 				082CDF192886B89000547694 /* RootView.swift in Sources */,
 				085689352886825B00A45819 /* CandlestickResponseDTO+Mapping.swift in Sources */,
+				08993D76288A56060034CB12 /* Transaction.swift in Sources */,
 				082CDF1B2886B9F400547694 /* RootFeature.swift in Sources */,
 				08AC4AE82887FBA1007916E3 /* Font+extension.swift in Sources */,
 				08AC4AEE2888021D007916E3 /* String+extension.swift in Sources */,

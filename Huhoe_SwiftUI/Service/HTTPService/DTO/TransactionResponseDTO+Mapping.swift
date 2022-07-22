@@ -33,3 +33,15 @@ extension TransactionResponseDTO {
         case ask = "ask"
     }
 }
+
+// MARK: - Mapping to Domain
+
+extension TransactionResponseDTO {
+    func toDomain(coinSymbol: String) -> Transaction {
+        if let price = transactionDTO.last?.price.toDouble {
+            return Transaction(coinSymbol: coinSymbol, price: price)
+        }
+        
+        return Transaction(coinSymbol: coinSymbol, price: Double.zero)
+    }
+}
