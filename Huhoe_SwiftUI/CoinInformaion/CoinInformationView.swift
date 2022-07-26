@@ -130,7 +130,7 @@ struct CoinInformationListView_Previews: PreviewProvider {
       store: Store(
         initialState: CoinInformationState(),
         reducer: coinInformationReducer,
-        environment: .dev(environment: CoinInformationEnvironment(coinInformaionRequset: dummyRepositoryErrect)
+        environment: .dev(environment: CoinInformationEnvironment(coinInformaionRequset: dummyCoinInformaionErrect)
         )
       )
     )
